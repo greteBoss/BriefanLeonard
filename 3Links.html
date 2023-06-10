@@ -1,14 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
+  <title>Meine Website</title>
+  <script>
+    function pruefeBuch() {
+      var eingabe = document.getElementById("name").value;
+      
+      if (eingabe === "Im Grunde Gut") {
+        window.location.href = "3Links.html"; // Verlinkung zur anderen Seite
+      } else {
+        document.getElementById("ergebnis").innerHTML = "Schade, der Rest ist nicht für dich.";
+      }
+    }
+  </script>
 </head>
 <body>
-    <h1>Ey Grete es funktioniert!!</h1>
-    
-   
+  <h1>Nice, du bist es wirklich :D  </h1>
+  <input type="text" id="name" />
+  <button onclick="pruefeName()">Absenden</button>
+  <p id="ergebnis"></p>
 </body>
 </html>
