@@ -3,11 +3,11 @@
 <head>
   <title>Meine Website</title>
   <script>
-    function pruefeBuch() {
+    function pruefeBuch2() {
       var eingabe = document.getElementById("name").value;
       
-      if (eingabe === "Im Grunde Gut") {
-        window.location.href = "3Links.html"; // Verlinkung zur anderen Seite
+      if (eingabe === "UTOPIEN FÜR REALISTEN") {
+        window.location.href = "4weitergehts.html"; // Verlinkung zur anderen Seite
       } else {
         document.getElementById("ergebnis").innerHTML = "Schade, der Rest ist nicht für dich.";
       }
@@ -15,9 +15,9 @@
   </script>
 </head>
 <body>
-  <h1>Nice, du bist es wirklich :D  </h1>
+  <h1>Nice, du bist es wirklich :D Welches Buch solltest du noch umbedingt lesen? </h1>
   <input type="text" id="name" />
-  <button onclick="pruefeName()">Absenden</button>
+  <button onclick="pruefeBuch2()">Absenden</button>
   <p id="ergebnis"></p>
 </body>
 </html>
