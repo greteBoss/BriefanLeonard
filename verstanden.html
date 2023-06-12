@@ -9,9 +9,11 @@
       if (auswahl === "gut") {
         document.getElementById("ergebnis").innerHTML = "Nice, freut mich!";
         document.getElementById("weiterButton").style.display = "block"; // Button anzeigen
+        document.getElementById("weiterButton").href = "4weitergehts.html"; // Verlinkung zur nächsten Seite
       } else if (auswahl === "mittel") {
         document.getElementById("ergebnis").innerHTML = "Musst schon gut sagen.";
         document.getElementById("weiterButton").style.display = "block"; // Button anzeigen
+        document.getElementById("weiterButton").href = "verstanden.html"; // Verlinkung zur nächsten Seite
       } else {
         document.getElementById("ergebnis").innerHTML = ""; // Ergebnis leeren
         document.getElementById("weiterButton").style.display = "none"; // Button ausblenden
@@ -28,6 +30,8 @@
   </select>
   <button onclick="pruefeAntwort()">Absenden</button>
   <p id="ergebnis"></p>
-  <button id="weiterButton" style="display: none;">Weiter</button>
+  <a href="" id="weiterButton" style="display: none;">Weiter</a>
 </body>
+</html>
+
 </html>
